@@ -160,7 +160,7 @@ function onDrop(event) {
     var crearSimbolo = document.createElement("img");
     crearSimbolo.classList.add("simboloImage");
     crearSimbolo.id='simboloBanderaImg';
-    console.log(draggableElement.src.slice(50));
+    console.log('wtf '+draggableElement.src.slice(50));
     crearSimbolo.setAttribute('src', './data/images/countrys/'+draggableElement.src.slice(50));
     document.getElementById('canvass').appendChild(crearSimbolo);
   }
