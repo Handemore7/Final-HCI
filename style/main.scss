@@ -1,0 +1,108 @@
+//typography
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+
+$primary-color:#FB990F;
+$secundary-color:#079DAB;
+$gray-color:#808080;
+$background-color: #9CE2E0; 
+$border-color: #4C9392;
+$font: 'Poppins', sans-serif;
+$Poppins: "Poppins", sans-serif;
+
+//general
+body,html {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background-color: #9ce2e0;
+    justify-content: space-between;
+}
+
+#map {
+    width: 50%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.instrucciones {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #9ce2e0;
+    img {
+        height: 95vh;
+    }
+
+    button {
+        position: absolute;
+        right: 15%;
+        top: 85%;
+
+        width: 388px;
+        height: 90px;
+
+        border-radius: 20px;
+        font-size: 36px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+h1 {
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 144px;
+
+    color: #ffffff;
+}
+
+h2 {
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: #263238;
+    margin: 0px;
+}
+
+h3 {
+    color: #4c9392;
+    font-family: $Poppins;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    margin: 10px 0px;
+}
+
+p,ul {
+    font-family: $Poppins;
+    font-style: normal;
+    font-size: 18px;
+    color: #263238;
+    margin: 0px;
+}
+
+@import "button";
+@import "nav";
+@import "home";
+@import "country";
+@import "levelThree";
+@import 'landing';
+@import "login";

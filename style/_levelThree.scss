@@ -1,0 +1,73 @@
+.levelThree {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__card{
+        width: 235px;
+        height: 170px;
+        background: #ffffff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        box-sizing: border-box;
+        padding: 10px;
+
+        margin-bottom: 20px;
+
+        p{
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    }
+
+    .btn{
+        position: absolute;
+        top: 750px;
+    }
+
+    &--complete{
+        width: 100%;height: 100%;
+        background-image: url('../data/images/complete.png');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        .globo{
+            position: absolute;
+
+            h3{
+                position: absolute;
+                top: 25px;
+                left: 25px;
+            }
+
+            p{
+                position: absolute;
+                top: 80px;
+                left: 25px;
+            }
+
+            &--big{
+                top: 141px;
+                left: 828px;
+
+            }
+
+            &--small{
+                top: 377px;
+                left: 986px;
+            }
+        }
+
+        .btn{
+            position: absolute;
+            top: 700px;
+            right: 200px; 
+        }
+    }
+}

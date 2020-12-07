@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Geoaprende</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <img class="clickable" src="./data/images/icons/arrow.png" alt="" />
+        <h2>Nivel 3</h2>
+    </nav>
+
+    <div class="instrucciones">
+        <img src="./data/images/gifNivel3.gif" alt="instrucciones del lvl 1">
+        <button class="btn btn--secondary">Empezar</button>
+    </div>
+
+    <div id="map""></div>
+
+        
+        <section class=" levelThree" style="display: none;">
+        <div class="levelThree__card clickable">
+            <img src="" alt="" />
+            <p>name</p>
+        </div>
+
+        <h3 class="levelThree__dist">Distancia:</h3>
+
+        <button class="btn btn-primary hidden">continuar</button>
+        </section>
+
+        <section class="levelThree--complete" style="display: none;">
+            <div class="globo globo--big">
+                <h3>¡Felicitaciones!</h3>
+                <p>Completaste el tercer nivel, lo hiciste muy bien.</p>
+                <img src="./data/images/globo--big.png" alt="">
+            </div>
+            <div class="globo globo--small">
+                <h3>Obtuviste</h3>
+                <p>x puntos</p>
+                <img src="./data/images/globo--small.png" alt="">
+            </div>
+            <button class="btn">Continuar</button>
+
+        </section>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+<script src="./scripts/firebase.js"></script>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+<script src="https://npmcdn.com/@turf/turf@5.1.6/turf.min.js"></script>
+<script src="./scripts/lib/codegrid.js"></script>
+<script src="./scripts/model/info--level--three.js"></script>
+<script src="./scripts/level--three.js"></script>
+
+</html>
